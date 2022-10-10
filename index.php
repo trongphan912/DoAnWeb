@@ -5,4 +5,4 @@
 	}
 	$index = true;
 	include("config.php");
-	include("../DoAn/layout/control.php");
+	include("../DoAnWeb/layout/control.php");

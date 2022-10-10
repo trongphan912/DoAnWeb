@@ -11,8 +11,8 @@
 <body>
 <?php
 // header
-include("layout/head/logo.php");
 include("layout/head/index_navbar.php");
+include("layout/body/slide_dau_trang_chu.php");
 // end-header
 // body
 // end-body
