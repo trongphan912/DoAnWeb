@@ -13,6 +13,11 @@
 // header
 include("layout/head/index_navbar.php");
 include("layout/body/slide_dau_trang_chu.php");
+include("layout/body/feature_trang_chu.php");
+include("layout/body/new_product_trang_chu.php");
+include("layout/body/product_3col_trang_chu.php");
+include("layout/footer/footer.php");
+
 // end-header
 // body
 // end-body
