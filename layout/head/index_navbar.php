@@ -30,14 +30,14 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">TRANG CHỦ <span class="sr-only">(current)</span></a>
+              <li class="nav-item">
+                <a class="nav-link" id="home_page" href="index.php">TRANG CHỦ <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">SẢN PHẨM</a>
+                <a class="nav-link" id="product_page" href="sanpham.php">SẢN PHẨM</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">GIỎ HÀNG</a>
+                <a class="nav-link" id="cart_page" href="cart.php">GIỎ HÀNG</a>
               </li>
             </ul>
             <form class="form-inline mt-2 mt-md-0">
@@ -46,4 +46,21 @@
             </form>
           </div>
     </nav>
+    <script type="text/javascript">
+      $( document ).ready(function() {
+          if (window.location.href.indexOf('index.php') != -1) {
+              var element = document.getElementById("home_page");
+              element.classList.add("active");
+          } else if (window.location.href.indexOf('sanpham.php') != -1) {
+              var element = document.getElementById("product_page");
+              element.classList.add("active");
+          } else if (window.location.href.indexOf('single_product.php') != -1) {
+              var element = document.getElementById("product_page");
+              element.classList.add("active");
+          }  else if (window.location.href.indexOf('cart.php') != -1) {
+              var element = document.getElementById("cart_page");
+              element.classList.add("active");
+          }
+        });
+    </script>
 <?php

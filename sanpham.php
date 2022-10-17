@@ -3,8 +3,8 @@
 	{
 		session_start();
 	}
-	$index = true;
-	$sanpham = false;
+	$index = false;
+	$sanpham = true;
 	$sigle_product = false;
 	include("config.php");
 	include("../DoAnWeb/layout/control.php");
