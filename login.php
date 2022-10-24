@@ -4,9 +4,9 @@
 		session_start();
 	}
 	$index = false;
-	$sanpham = true;
+	$sanpham = false;
 	$single_product = false;
 	$cart = false;
-	$login = false;
+	$login = true;
 	include("config.php");
 	include("../DoAnWeb/layout/control.php");

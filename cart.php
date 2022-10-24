@@ -7,5 +7,6 @@
 	$sanpham = false;
 	$single_product = false;
 	$cart = true;
+	$login = false;
 	include("config.php");
 	include("../DoAnWeb/layout/control.php");

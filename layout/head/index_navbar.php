@@ -39,6 +39,9 @@
               <li class="nav-item">
                 <a class="nav-link" id="cart_page" href="cart.php">GIỎ HÀNG</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" id="login_page" href="login.php">ĐĂNG NHẬP</a>
+              </li>
             </ul>
             <form class="form-inline mt-2 mt-md-0">
               <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
@@ -59,6 +62,9 @@
               element.classList.add("active");
           }  else if (window.location.href.indexOf('cart.php') != -1) {
               var element = document.getElementById("cart_page");
+              element.classList.add("active");
+          }  else if (window.location.href.indexOf('login.php') != -1) {
+              var element = document.getElementById("login_page");
               element.classList.add("active");
           }
         });

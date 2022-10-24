@@ -26,6 +26,8 @@ if ($index == true) {
 	include("layout/body/chitiet_sanpham.php");
 } elseif ($cart == true) { 
 	include("layout/body/cart_layout.php");
+} elseif ($login == true) { 
+	include("layout/body/login.php");
 }
 // footer
 	include("layout/footer/footer.php");
