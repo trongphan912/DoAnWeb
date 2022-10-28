@@ -10,4 +10,6 @@
 	$login = false;
 	$user_profile = false;
 	include("config.php");
+	include_once("DB.php");
+	include("../DoAnWeb/data/xu_ly_show_san_pham.php");
 	include("../DoAnWeb/layout/control.php");

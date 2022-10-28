@@ -8,57 +8,57 @@
 	        </div>
 	        <div class="row">
 	        	<div class="col-md-6">
-	        		<div id="slider" class="owl-carousel product-slider">
+	        		<div id="slider" class=" product-slider">
 						<div class="item">
-						  	<img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" />
+						  	<img src="http://localhost/DoAnWeb/img/product_img/<?php echo $product_image; ?>" />
+						</div>
+						<!--<div class="item">
+						  	<img src="http://localhost/DoAnWeb/img/product_img/<?php echo $product_image; ?>" />
 						</div>
 						<div class="item">
-						  	<img src="https://i.ytimg.com/vi/PJ_zomNMK_s/maxresdefault.jpg" />
+						  	<img src="http://localhost/DoAnWeb/img/product_img/<?php echo $product_image; ?>" />
 						</div>
 						<div class="item">
-						  	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQI6nUmObt62eDkqNSmIvCN_KkQExtbpJmUbVx_eTh_Y3v3r-Jw" />
+						  	<img src="http://localhost/DoAnWeb/img/product_img/<?php echo $product_image; ?>" />
 						</div>
 						<div class="item">
-						  	<img src="https://i.ytimg.com/vi/PJ_zomNMK_s/maxresdefault.jpg" />
+						  	<img src="http://localhost/DoAnWeb/img/product_img/<?php echo $product_image; ?>" />
 						</div>
 						<div class="item">
-						  	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQI6nUmObt62eDkqNSmIvCN_KkQExtbpJmUbVx_eTh_Y3v3r-Jw" />
+						  	<img src="http://localhost/DoAnWeb/img/product_img/<?php echo $product_image; ?>" />
 						</div>
 						<div class="item">
-						  	<img src="https://i.ytimg.com/vi/PJ_zomNMK_s/maxresdefault.jpg" />
-						</div>
-						<div class="item">
-						  	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQI6nUmObt62eDkqNSmIvCN_KkQExtbpJmUbVx_eTh_Y3v3r-Jw" />
+						  	<img src="http://localhost/DoAnWeb/img/product_img/<?php echo $product_image; ?>" />
 						</div>
 					</div>
 					<div id="thumb" class="owl-carousel product-thumb">
 						<div class="item">
-						  	<img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" />
+						  	<img src="http://localhost/DoAnWeb/img/product_img/<?php echo $product_image; ?>" />
 						</div>
 						<div class="item">
-						  	<img src="https://i.ytimg.com/vi/PJ_zomNMK_s/maxresdefault.jpg" />
+						  	<img src="http://localhost/DoAnWeb/img/product_img/<?php echo $product_image; ?>" />
 						</div>
 						<div class="item">
-						  	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQI6nUmObt62eDkqNSmIvCN_KkQExtbpJmUbVx_eTh_Y3v3r-Jw" />
+						  	<img src="http://localhost/DoAnWeb/img/product_img/<?php echo $product_image; ?>" />
 						</div>
 						<div class="item">
-						  	<img src="https://i.ytimg.com/vi/PJ_zomNMK_s/maxresdefault.jpg" />
+						  	<img src="http://localhost/DoAnWeb/img/product_img/<?php echo $product_image; ?>" />
 						</div>
 						<div class="item">
-						  	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQI6nUmObt62eDkqNSmIvCN_KkQExtbpJmUbVx_eTh_Y3v3r-Jw" />
+						  	<img src="http://localhost/DoAnWeb/img/product_img/<?php echo $product_image; ?>" />
 						</div>
 						<div class="item">
-						  	<img src="https://i.ytimg.com/vi/PJ_zomNMK_s/maxresdefault.jpg" />
+						  	<img src="http://localhost/DoAnWeb/img/product_img/<?php echo $product_image; ?>" />
 						</div>
 						<div class="item">
-						  	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQI6nUmObt62eDkqNSmIvCN_KkQExtbpJmUbVx_eTh_Y3v3r-Jw" />
-						</div>
+						  	<img src="http://localhost/DoAnWeb/img/product_img/<?php echo $product_image; ?>" />
+						</div>-->
 					</div>
 	        	</div>
 	        	<div class="col-md-6">
 	        		<div class="product-dtl">
         				<div class="product-info">
-		        			<div class="product-name">Variable Product</div>
+		        			<div class="product-name"><?php echo $product_name; ?></div>
 		        			<div class="reviews-counter">
 								<div class="rate">
 								    <input type="radio" id="star5" name="rate" value="5" checked />
@@ -74,11 +74,11 @@
 								  </div>
 								<span>3 Reviews</span>
 							</div>
-		        			<div class="product-price-discount"><span>$39.00</span><span class="line-through">$29.00</span></div>
+		        			<div class="product-price-discount"><span><?php echo $price; ?></span><span class="line-through"><?php echo $price; ?></span></div>
 		        		</div>
-	        			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	        			<p><?php echo $product_mota; ?></p>
 	        			<div class="row">
-	        				<div class="col-md-6">
+	        				<!--<div class="col-md-6">
 	        					<label for="size">Size</label>
 								<select id="size" name="size" class="form-control">
 									<option>S</option>
@@ -94,7 +94,7 @@
 									<option>Green</option>
 									<option>Red</option>
 								</select>
-	        				</div>
+	        				</div>-->
 	        			</div>
 	        			<div class="product-count">
 	        				<label for="size">Quantity</label>
@@ -119,7 +119,7 @@
 				</ul>
 				<div class="tab-content" id="myTabContent">
 				  	<div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
-				  		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+				  		<?php echo $product_mota; ?>
 				  	</div>
 				  	<div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">
 				  		<div class="review-heading">REVIEWS</div>

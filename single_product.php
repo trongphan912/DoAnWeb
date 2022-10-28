@@ -9,4 +9,6 @@
 	$cart = false;
 	$login = false;
 	include("config.php");
+	include_once("DB.php");
+	include("../DoAnWeb/data/xu_ly_chitiet_sanpham.php");
 	include("../DoAnWeb/layout/control.php");

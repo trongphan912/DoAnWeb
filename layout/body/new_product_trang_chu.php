@@ -1,5 +1,4 @@
 <?php
-include("../data/xu_ly_slide_sp_moi.php");
 ?>
 <div class="container text-center">
 	<section class="my-5 bg-dark">
@@ -17,16 +16,23 @@ include("../data/xu_ly_slide_sp_moi.php");
 		  <div class="carousel-inner">
 			<div class="carousel-item active">
 				<div class="row">
-				  <div class="col-xl-3 p-1">				
-					<div class="card">
-					  <img src="https://via.placeholder.com/300x250" class="w-100">
-					  <div class="card-body">
-						<h5 class="card-title">Product Name</h5>
-						<p class="card-text">Product Description</p>
-						<a href="#" class="btn btn-outline-success w-100">Show</a>
-					  </div>
-					</div>
-				  </div>
+				  
+				<?php echo $data_1; ?>
+
+				</div>
+			</div>
+			<div class="carousel-item">
+				<div class="row">
+				  
+				  <?php echo $data_2; ?>
+			
+				</div>
+			</div>
+			<div class="carousel-item">
+				<div class="row">
+				  
+				  <?php echo $data_3; ?>
+			
 				</div>
 			</div>
 			</div>
@@ -43,5 +49,3 @@ include("../data/xu_ly_slide_sp_moi.php");
 	</section>
 </div>
 <?php
-$result -> free_result();
-$mysqli -> close();
