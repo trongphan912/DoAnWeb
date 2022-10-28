@@ -53,10 +53,8 @@
                 <?php } ?>
               </li>
             </ul>
-            <form class="form-inline mt-2 mt-md-0">
-              <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+              <input class="form-control mr-sm-2" style="width: 300px;" type="text" id="search_content" placeholder="Search" aria-label="Search">
+              <a class="btn btn-outline-success my-2 my-sm-0" onclick="search_sanpham()" id="search_submit">Search</a>
           </div>
     </nav>
     <script type="text/javascript">

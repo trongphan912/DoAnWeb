@@ -32,6 +32,8 @@ if ($index == true) {
 	include("layout/body/user_profile.php");
 } elseif ($quanly_sanpham == true) { 
 	include("layout/body/quanly_sanpham.php");
+} elseif ($search == true) {
+	include("layout/body/card_sanpham.php");
 }
 // footer
 	include("layout/footer/footer.php");

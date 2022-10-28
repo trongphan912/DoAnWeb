@@ -105,3 +105,9 @@ function khoiphuc_sanpham() {
 	  }
 		
 }
+
+// gửi dữ liệu kiểm tra đăng nhập
+function search_sanpham() {
+		search_content  = $('#search_content')[0].value;
+		window.location.href = 'search.php?search=' + search_content;
+}
