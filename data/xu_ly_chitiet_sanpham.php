@@ -9,6 +9,7 @@ $product_name = $row["product_name"];
 $price= $row["price"];
 $product_mota = $row["product_mota"];
 $product_image = $row["product_image"];
+$product_status = $row["product_status"];
 //$row["Age"]);
 
 // Free result set

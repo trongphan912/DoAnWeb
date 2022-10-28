@@ -9,5 +9,6 @@
 	$cart = true;
 	$login = false;
 	$user_profile = false;
+	$quanly_sanpham = false;
 	include("config.php");
 	include("../DoAnWeb/layout/control.php");

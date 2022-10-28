@@ -30,6 +30,8 @@ if ($index == true) {
 	include("layout/body/login.php");
 } elseif ($user_profile == true) { 
 	include("layout/body/user_profile.php");
+} elseif ($quanly_sanpham == true) { 
+	include("layout/body/quanly_sanpham.php");
 }
 // footer
 	include("layout/footer/footer.php");

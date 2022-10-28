@@ -1,5 +1,5 @@
 <?php
-$sql = "select * from product where 1 = 1 order by 'id' desc limit 12";
+$sql = "select * from product where product_status = 0 order by 'id' desc limit 12";
 $result = $mysqli -> query($sql);
 $data_1 ="";
 $data_2 ="";

@@ -1,22 +1,11 @@
 <?php
+$id_sanpham = $_GET["id"];
 ?>
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"><div class="pd-wrap">
 		<div class="container" style="background:white;">
 	        <div class="heading-section">
 	            <h2>Product Details</h2>
-	            <?php if(!empty($_SESSION['NguoiDung'])){ ?>
-                            <?php if ($_SESSION['NguoiDung']["role"] = 1){
-                            	if ($product_status == 1) {
-                            		$text_1 = '<a onclick="khoiphuc_sanpham()" style="background:green; color: white; padding: 4px; border-radius: 4px;  float:right;">Khôi phục</a>
-                                <input type="hidden" id="id_sanpham" value="'.$id_sanpham .'"/>';
-                                } else {
-									$text_1 = '<a onclick="xoa_sanpham()" style="background:red; color: white; padding: 4px; border-radius: 4px; float:right;">Xóa</a>
-                                <input type="hidden" id="id_sanpham" value="'.$id_sanpham .'"/>';
-                                }
-                                echo '<a id="logout" href="quanly_sanpham.php?id='.$id_sanpham.'" style="background:#eee; color: black; padding: 4px; margin-left:4px; border-radius: 4px; float:right;">Cập nhật sản phẩm</a>'.$text_1;
-                            } ?>
-                        <?php }?>
 	        </div>
 	        <div class="row">
 	        	<div class="col-md-6">
@@ -70,7 +59,7 @@
 	        	<div class="col-md-6">
 	        		<div class="product-dtl">
         				<div class="product-info">
-		        			<div class="product-name"><?php echo $product_name; ?></div>
+		        			<div class="product-name"><?php echo '<input id="product_name" value="'.$product_name.'"/><input type="hidden" id="id_sanpham" value="'.$id_sanpham .'"/>'; ?></div>
 		        			<div class="reviews-counter">
 								<div class="rate">
 								    <input type="radio" id="star5" name="rate" value="5" checked />
@@ -86,9 +75,9 @@
 								  </div>
 								<span>3 Reviews</span>
 							</div>
-		        			<div class="product-price-discount"><span><?php echo $price; ?></span><span class="line-through"><?php echo $price; ?></span></div>
+		        			<div class="product-price-discount"><span><?php echo '<input id="price" value="'.$price.'"/>'; ?></span><span class="line-through"><?php echo $price; ?></span></div>
 		        		</div>
-	        			<p><?php echo $product_mota; ?></p>
+	        			<p><?php echo '<input id="product_mota" value="'.$product_mota.'"/>'; ?></p>
 	        			<div class="row">
 	        				<!--<div class="col-md-6">
 	        					<label for="size">Size</label>
@@ -108,7 +97,7 @@
 								</select>
 	        				</div>-->
 	        			</div>
-	        			<div class="product-count">
+	        			<!--<div class="product-count">
 	        				<label for="size">Quantity</label>
 	        				<form action="#" class="display-flex">
 							    <div class="qtyminus">-</div>
@@ -116,7 +105,8 @@
 							    <div class="qtyplus">+</div>
 							</form>
 							<a href="#" class="round-black-btn">Add to Cart</a>
-	        			</div>
+	        			</div>-->
+	        			<a onclick="capnhat_sanpham()" class="round-black-btn">Cập nhật</a>
 	        		</div>
 	        	</div>
 	        </div>
@@ -132,46 +122,6 @@
 				<div class="tab-content" id="myTabContent">
 				  	<div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
 				  		<?php echo $product_mota; ?>
-				  	</div>
-				  	<div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">
-				  		<div class="review-heading">REVIEWS</div>
-				  		<p class="mb-20">There are no reviews yet.</p>
-				  		<form class="review-form">
-		        			<div class="form-group">
-			        			<label>Your rating</label>
-			        			<div class="reviews-counter">
-									<div class="rate">
-									    <input type="radio" id="star5" name="rate" value="5" />
-									    <label for="star5" title="text">5 stars</label>
-									    <input type="radio" id="star4" name="rate" value="4" />
-									    <label for="star4" title="text">4 stars</label>
-									    <input type="radio" id="star3" name="rate" value="3" />
-									    <label for="star3" title="text">3 stars</label>
-									    <input type="radio" id="star2" name="rate" value="2" />
-									    <label for="star2" title="text">2 stars</label>
-									    <input type="radio" id="star1" name="rate" value="1" />
-									    <label for="star1" title="text">1 star</label>
-									</div>
-								</div>
-							</div>
-		        			<div class="form-group">
-			        			<label>Your message</label>
-			        			<textarea class="form-control" rows="10"></textarea>
-			        		</div>
-			        		<div class="row">
-				        		<div class="col-md-6">
-				        			<div class="form-group">
-					        			<input type="text" name="" class="form-control" placeholder="Name*">
-					        		</div>
-					        	</div>
-				        		<div class="col-md-6">
-				        			<div class="form-group">
-					        			<input type="text" name="" class="form-control" placeholder="Email Id*">
-					        		</div>
-					        	</div>
-					        </div>
-					        <button class="round-black-btn">Submit Review</button>
-			        	</form>
 				  	</div>
 				</div>
 			</div>

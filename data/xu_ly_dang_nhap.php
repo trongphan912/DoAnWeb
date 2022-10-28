@@ -18,6 +18,7 @@ if(empty(session_id()))
 		$user_name = $row["username"];
 		$email= $row["email"];
 		$sdt = $row["sdt"];
+		$role = $row["role"];
 		$id = $row["id"];
 		//$row["Age"]);
 
@@ -32,7 +33,7 @@ if(empty(session_id()))
 											"id"=>$id,
 											"sdt"=>$sdt,
 											"email"=>$email,
-											//"loai"=>$KQ[0]['LoaiKH'],
+											"role"=>$role,
 											//"khyenmai"=>$KQ[0]['PhanTram']
 										);
 			//echo $_SESSION['NguoiDung']['ten'];

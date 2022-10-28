@@ -9,6 +9,7 @@
 	$cart = false;
 	$login = false;
 	$user_profile = false;
+	$quanly_sanpham = false;
 	include("config.php");
 	include_once("DB.php");
 	include("../DoAnWeb/data/xu_ly_show_san_pham.php");

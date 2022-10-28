@@ -40,6 +40,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-4">
+                        
                     	<a id="logout" onclick="dangxuat()" style="background:red; color: white; padding: 4px; border-radius: 4px; margin: 20px;">Đăng xuất</a>
                     </div>
                     <div class="col-md-8">
