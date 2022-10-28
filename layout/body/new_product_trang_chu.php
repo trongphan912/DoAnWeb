@@ -1,4 +1,5 @@
 <?php
+include("../data/xu_ly_slide_sp_moi.php");
 ?>
 <div class="container text-center">
 	<section class="my-5 bg-dark">
@@ -26,127 +27,9 @@
 					  </div>
 					</div>
 				  </div>
-				  <div class="col-xl-3 p-1">				
-					<div class="card">
-					  <img src="https://via.placeholder.com/300x250" class="w-100">
-					  <div class="card-body">
-						<h5 class="card-title">Product Name</h5>
-						<p class="card-text">Product Description</p>
-						<a href="#" class="btn btn-outline-success w-100">Show</a>
-					  </div>
-					</div>
-				  </div>
-				  <div class="col-xl-3 p-1">				
-					<div class="card">
-					  <img src="https://via.placeholder.com/300x250" class="w-100">
-					  <div class="card-body">
-						<h5 class="card-title">Product Name</h5>
-						<p class="card-text">Product Description</p>
-						<a href="#" class="btn btn-outline-success w-100">Show</a>
-					  </div>
-					</div>
-				  </div>
-				  <div class="col-xl-3 p-1">				
-					<div class="card">
-					  <img src="https://via.placeholder.com/300x250" class="w-100">
-					  <div class="card-body">
-						<h5 class="card-title">Product Name</h5>
-						<p class="card-text">Product Description</p>
-						<a href="#" class="btn btn-outline-success w-100">Show</a>
-					  </div>
-					</div>
-				  </div>
 				</div>
 			</div>
-			<div class="carousel-item">
-			 <div class="row">
-				  <div class="col-xl-3 p-1">				
-					<div class="card">
-					  <img src="https://via.placeholder.com/300x250" class="w-100">
-					  <div class="card-body">
-						<h5 class="card-title">Product Name</h5>
-						<p class="card-text">Product Description</p>
-						<a href="#" class="btn btn-outline-success w-100">Show</a>
-					  </div>
-					</div>
-				  </div>
-				  <div class="col-xl-3 p-1">				
-					<div class="card">
-					  <img src="https://via.placeholder.com/300x250" class="w-100">
-					  <div class="card-body">
-						<h5 class="card-title">Product Name</h5>
-						<p class="card-text">Product Description</p>
-						<a href="#" class="btn btn-outline-success w-100">Show</a>
-					  </div>
-					</div>
-				  </div>
-				  <div class="col-xl-3 p-1">				
-					<div class="card">
-					  <img src="https://via.placeholder.com/300x250" class="w-100">
-					  <div class="card-body">
-						<h5 class="card-title">Product Name</h5>
-						<p class="card-text">Product Description</p>
-						<a href="#" class="btn btn-outline-success w-100">Show</a>
-					  </div>
-					</div>
-				  </div>
-				  <div class="col-xl-3 p-1">				
-					<div class="card">
-					  <img src="https://via.placeholder.com/300x250" class="w-100">
-					  <div class="card-body">
-						<h5 class="card-title">Product Name</h5>
-						<p class="card-text">Product Description</p>
-						<a href="#" class="btn btn-outline-success w-100">Show</a>
-					  </div>
-					</div>
-				  </div>
-				</div>
 			</div>
-			<div class="carousel-item">
-			<div class="row">
-				  <div class="col-xl-3 p-1">				
-					<div class="card">
-					  <img src="https://via.placeholder.com/300x250" class="w-100">
-					  <div class="card-body">
-						<h5 class="card-title">Product Name</h5>
-						<p class="card-text">Product Description</p>
-						<a href="#" class="btn btn-outline-success w-100">Show</a>
-					  </div>
-					</div>
-				  </div>
-				  <div class="col-xl-3 p-1">				
-					<div class="card">
-					  <img src="https://via.placeholder.com/300x250" class="w-100">
-					  <div class="card-body">
-						<h5 class="card-title">Product Name</h5>
-						<p class="card-text">Product Description</p>
-						<a href="#" class="btn btn-outline-success w-100">Show</a>
-					  </div>
-					</div>
-				  </div>
-				  <div class="col-xl-3 p-1">				
-					<div class="card">
-					  <img src="https://via.placeholder.com/300x250" class="w-100">
-					  <div class="card-body">
-						<h5 class="card-title">Product Name</h5>
-						<p class="card-text">Product Description</p>
-						<a href="#" class="btn btn-outline-success w-100">Show</a>
-					  </div>
-					</div>
-				  </div>
-				  <div class="col-xl-3 p-1">				
-					<div class="card">
-					  <img src="https://via.placeholder.com/300x250" class="w-100">
-					  <div class="card-body">
-						<h5 class="card-title">Product Name</h5>
-						<p class="card-text">Product Description</p>
-						<a href="#" class="btn btn-outline-success w-100">Show</a>
-					  </div>
-					</div>
-				  </div>
-				</div>
-			</div>
-		  </div>
 		  <a class="carousel-control-prev" href="#carouselFourColumn" role="button" data-slide="prev">
 			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 			<span class="sr-only">Previous</span>
@@ -160,3 +43,5 @@
 	</section>
 </div>
 <?php
+$result -> free_result();
+$mysqli -> close();

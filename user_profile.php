@@ -4,10 +4,10 @@
 		session_start();
 	}
 	$index = false;
-	$sanpham = true;
+	$sanpham = false;
 	$single_product = false;
 	$cart = false;
 	$login = false;
-	$user_profile = false;
+	$user_profile = true;
 	include("config.php");
 	include("../DoAnWeb/layout/control.php");

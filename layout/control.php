@@ -28,6 +28,8 @@ if ($index == true) {
 	include("layout/body/cart_layout.php");
 } elseif ($login == true) { 
 	include("layout/body/login.php");
+} elseif ($user_profile == true) { 
+	include("layout/body/user_profile.php");
 }
 // footer
 	include("layout/footer/footer.php");

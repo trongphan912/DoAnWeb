@@ -8,5 +8,6 @@
 	$single_product = false;
 	$cart = true;
 	$login = false;
+	$user_profile = false;
 	include("config.php");
 	include("../DoAnWeb/layout/control.php");

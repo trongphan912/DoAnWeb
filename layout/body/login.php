@@ -1,5 +1,6 @@
 <?php 
 ?>
+ <?php if(empty($_SESSION['NguoiDung'])){ ?>
 <div class="container">
 	<div class="d-flex justify-content-center h-100">
 		<div class="card">
@@ -137,4 +138,5 @@ color: white;
 margin-left: 4px;
 }
 </style>
+<?php }?>
 <?php

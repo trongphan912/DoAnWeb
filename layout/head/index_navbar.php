@@ -40,7 +40,17 @@
                 <a class="nav-link" id="cart_page" href="cart.php">GIỎ HÀNG</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" id="login_page" href="login.php">ĐĂNG NHẬP</a>
+                <?php if(empty($_SESSION['NguoiDung'])){ ?>
+                  <a class="nav-link" id="login_page" href="login.php">ĐĂNG NHẬP</a>
+                <?php } else { ?>
+                  <a class="nav-link" id="login_page" href="
+
+                                        <?php if(!empty($_SESSION['NguoiDung'])){ ?>
+                                        <?php echo "user_profile.php"; ?>
+                                        <?php } else {echo "login.php";}?>
+
+                                        ">Xin chào, <?php echo $_SESSION['NguoiDung']["ten"]; ?></a>
+                <?php } ?>
               </li>
             </ul>
             <form class="form-inline mt-2 mt-md-0">

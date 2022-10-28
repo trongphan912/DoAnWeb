@@ -10,19 +10,34 @@ if(empty(session_id()))
 	{
 		$taikhoan = $_POST["tk"];
 		$matkhau = $_POST["mk"];
-		$KQ = DP::run_query("select * from user where username = ? AND password = ?",[$taikhoan,$matkhau],2);
-		if(!empty($KQ))
+		$sql = "select * from user where username = '".$taikhoan."' AND password = '".$matkhau."'";
+
+		$result = $mysqli -> query($sql);
+		// Associative array
+		$row = $result -> fetch_array(MYSQLI_ASSOC);
+		$user_name = $row["username"];
+		$email= $row["email"];
+		$sdt = $row["sdt"];
+		$id = $row["id"];
+		//$row["Age"]);
+
+		// Free result set
+		$result -> free_result();
+
+		$mysqli -> close();
+
+		if(!empty($user_name))
 		{
-			$_SESSION['NguoiDung']= array(	//"ma"=>$KQ[0]['MaKH'],
-											"ten"=>$KQ[0]['username'],
-											//"sdt"=>$KQ[0]['SDT'],
-											//"dc"=>$KQ[0]['DiaChi'],
+			$_SESSION['NguoiDung']= array(	"ten"=>$user_name,
+											"id"=>$id,
+											"sdt"=>$sdt,
+											"email"=>$email,
 											//"loai"=>$KQ[0]['LoaiKH'],
 											//"khyenmai"=>$KQ[0]['PhanTram']
 										);
 			//echo $_SESSION['NguoiDung']['ten'];
 			//header('Location: ../index.php');
-			echo '1';
+			echo 'Đăng nhập thành công!';
 		}
 		else 
 		{
